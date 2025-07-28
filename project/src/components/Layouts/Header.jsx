@@ -1,5 +1,34 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
+import Swal from "sweetalert2";
+
 function Header() {
+  let isLogin = sessionStorage.getItem("isLogin")
+  let name = sessionStorage.getItem("name")
+  const nav = useNavigate()
+  ///sweetalert2
+  const logout = () => {
+
+    Swal.fire({
+      title: "Are you sure you want to logout?",
+      // text: "You won't be able to revert this!",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Yes, Logout!"
+    }).then((result) => {
+      if (result.isConfirmed) {
+        sessionStorage.clear()
+        nav("/login")
+        Swal.fire({
+          title: "Logout!",
+          text: "Logout successfully.",
+          icon: "success"
+        });
+      }
+    });
+  }
   return (
     <>
       <header id="header" className="header d-flex align-items-center fixed-top">
@@ -14,14 +43,11 @@ function Header() {
           </a>
           <nav id="navmenu" className="navmenu">
             <ul>
-              <li>
+              {/*} <li>
                 <Link to="/Login">Login</Link>
-              </li>
+              </li>*/}
               <li>
-                <Link to ="/Register">Register</Link>
-              </li>
-              <li>
-                <Link to="/" className="active">
+                <Link to="/" >
                   Home
                 </Link>
               </li>
@@ -40,8 +66,25 @@ function Header() {
               <li>
                 <Link to="/Contact">Contact</Link>
               </li>
-
               <li className="dropdown">
+                <a href="#">
+                  <span>Register</span>{" "}
+                  <i className="bi bi-chevron-down toggle-dropdown" />
+                </a>
+                <ul>
+                  <li>
+                    <Link to="/register/user">
+                      Register as a user
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/register/pgowner">
+                      Register as a PG Owner
+                    </Link>
+                  </li>
+                </ul>
+              </li>
+              {/*  <li className="dropdown">
                 <a href="#">
                   <span>Dropdown</span>{" "}
                   <i className="bi bi-chevron-down toggle-dropdown" />
@@ -84,6 +127,21 @@ function Header() {
                   </li>
                 </ul>
               </li>
+              */}
+               {
+              isLogin ?
+                <li className="nav-item">
+                  <Link onClick={logout} className="nav-link">
+                    Logout {name}
+                  </Link>
+                </li>
+                :
+                <li className="nav-item">
+                  <Link to={"/login"} className="nav-link">
+                    Login
+                  </Link>
+                </li>
+            }
             </ul>
             <i className="mobile-nav-toggle d-xl-none bi bi-list" />
           </nav>
