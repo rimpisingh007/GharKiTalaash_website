@@ -53,34 +53,34 @@ export default function AdminHeader() {
                 </a>
                 <ul>
                   <li>
-                    <Link to="admin/city/add">
+                    <Link to="city/add">
                       Add city
                     </Link>
                   </li>
                   <li>
-                    <Link to="admin/city/manage">
+                    <Link to="city/manage">
                       Manage city
                     </Link>
                   </li>
                 </ul>
               </li>
               <li>
-                <Link to="/ManageBookings">
+                <Link to="managebookings">
                   Manage Bookings
                 </Link>
               </li>
               <li>
-                <Link to="/ManagePG">
+                <Link to="managepg">
                   Manage PG
                 </Link>
               </li>
               <li>
-                <Link to="/ManagePGOwners">
+                <Link to="managepgowners">
                   Manage PG Owners
                 </Link>
               </li>
               <li>
-                <Link to="/ManageUsers">
+                <Link to="manageusers">
                   Manage Users
                 </Link>
               </li>

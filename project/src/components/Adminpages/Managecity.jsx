@@ -97,10 +97,9 @@ export default function Managecity(){
                   <table className="table table-striped">
                                     <thead>
                                         <tr>
-                                        <th scope="col">#</th>
-                                        <th scope="col">City</th>
-                                        <th scope="col">Type</th>
-                                        <th scope="col">Des</th>
+                                        <th scope="col">Sno.</th>
+                                        <th scope="col">City Name</th>
+                                       
                                         <th scope="col">Image</th>
                                         <th scope="col">Actions</th>
 
@@ -112,8 +111,6 @@ export default function Managecity(){
                                         <tr>
                                         <th scope="row">{index+1}</th>
                                         <td>{el.cityName}</td>
-                                        <td>{el.type}</td>
-                                        <td>{el.description}</td>
                                          <td>
                                             <img className="img-fluid" src={el.image} alt=""  style={{height:"50px", width:"50px"}}/></td>
                                          <td>

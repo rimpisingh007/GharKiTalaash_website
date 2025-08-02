@@ -1,7 +1,7 @@
 import { collection, getCountFromServer } from "firebase/firestore";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { db } from "../../../Firebase";
+
 
 export default function AdminDashboard(){
     const [user, setUser]=useState(0)
@@ -54,7 +54,7 @@ export default function AdminDashboard(){
               <span className="flaticon-blind" />
             </div>
             <div className="media-body">
-              <h3 className="heading">Total Breeds</h3>
+              <h3 className="heading">Total Pgs</h3>
               <h1>{breed}</h1>
               <Link
                 to={"/admin/breed/manage"}
@@ -72,7 +72,7 @@ export default function AdminDashboard(){
               <span className="flaticon-dog-eating" />
             </div>
             <div className="media-body">
-              <h3 className="heading">Pet Listing</h3>
+              <h3 className="heading">Users Listing</h3>
               <h1>1000</h1>
               <a
                 href="#"
@@ -90,7 +90,7 @@ export default function AdminDashboard(){
               <span className="flaticon-grooming" />
             </div>
             <div className="media-body">
-              <h3 className="heading">Total Users</h3>
+              <h3 className="heading">Total Pg Owners</h3>
               <h1>{user}</h1>
               <a
                 href="#"

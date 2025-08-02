@@ -42,23 +42,23 @@ export default function PGOwnerHeader(){
           </a>
           <nav id="navmenu" className="navmenu">
             <ul>
-              <li>
+             {/* <li>
                 <Link to="/Dashboard">
                   Dashboard
                 </Link>
-              </li>
+              </li>*/}
               <li>
-                <Link to="/Addproperty">
+                <Link to="/addproperty">
                   Add Property
                 </Link>
               </li>
               <li>
-                <Link to="/ManageBooking">
+                <Link to="/managebooking">
                   Manage Booking
                 </Link>
               </li>
               <li>
-                <Link to="/ManageProperty">
+                <Link to="/manageproperty">
                   Manage Property
                 </Link>
               </li>
