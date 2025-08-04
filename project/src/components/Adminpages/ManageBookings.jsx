@@ -14,12 +14,12 @@ export default function ManageBookings(){
 
     const fetchData=()=>{
         const q=query(collection(db,"bookings")
-        // ,where("type","==","Dog")
+       
     ) 
         onSnapshot(q,(bookingData)=>{
             setAllBookings(
                 bookingData.docs.map((el)=>{
-                // console.log(el.id,el.data());
+              
                 return{id:el.id,...el.data()}
             }))
             setLoad(false)
@@ -98,11 +98,15 @@ export default function ManageBookings(){
                                     <thead>
                                         <tr>
                                         <th scope="col">S no.</th>
-                                        <th scope="col">Booking</th>
-                                        <th scope="col">Type</th>
-                                        <th scope="col">Des</th>
-                                        <th scope="col">Image</th>
-                                        <th scope="col">Actions</th>
+                                        <th scope="col">Owner Details</th>
+                                        <th scope="col">Title</th>
+                                        <th scope="col">Size</th>
+                                        <th scope="col">Images</th>
+                                         <th scope="col">Status</th>
+                                        <th scope="col">Price</th>
+                                         <th scope="col">Description</th>
+                                          <th scope="col">City</th>
+                                          <th scope="col">Actions</th>
 
                                         </tr>
                                     </thead>

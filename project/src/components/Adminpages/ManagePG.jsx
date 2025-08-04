@@ -98,9 +98,11 @@ export default function ManagePG(){
                                     <thead>
                                         <tr>
                                         <th scope="col">Sno.</th>
-                                        <th scope="col">Owner Details</th>
-                                        <th scope="col">Title</th>
-                                        <th scope="col">Size</th>
+                                        <th scope="col">Name</th>
+                                        <th scope="col">Email</th>
+                                        <th scope="col">Size
+                                            
+                                        </th>
                                         <th scope="col">Image</th>
                                         <th scope="col">Actions</th>
 
