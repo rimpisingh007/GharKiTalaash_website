@@ -91,9 +91,9 @@ export default function Home(){
           <img src="/assets/img/hero-carousel/hero-carousel-1.jpg" alt="" />
           <div className="carousel-container">
             <div>
-              <p>Doral, Florida</p>
+              <p>Delhi,India</p>
               <h2>
-                <span>204</span> Olive Road Two
+                <span>24</span> Olive Road Two
               </h2>
               <a href="property-single.html" className="btn-get-started">
                 rent | $ 12.000

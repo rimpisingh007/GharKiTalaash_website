@@ -37,7 +37,7 @@ export default function PgDashboard(){
         <div className="container">
           <div className="row d-flex justify-content-center text-center">
             <div className="col-lg-8">
-              <h1 className="text-light">Dashbaord</h1>
+              <h1 className="text-light">Dashboard</h1>
               
             </div>
           </div>
