@@ -35,7 +35,7 @@ export default function Navbar(){
         {/* Uncomment the line below if you also wish to use an image logo */}
         {/* <img src="assets/img/logo.png" alt=""> */}
         <h1 className="sitename">
-          Rent<span>Hive</span>
+            GharKi<span>Talash</span>
         </h1>
       </a>
       <nav id="navmenu" className="navmenu">

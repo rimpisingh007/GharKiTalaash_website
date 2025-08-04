@@ -15,7 +15,7 @@ export default function RoomCredHeader() {
         <div className="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
           <a href="#" className="logo d-flex align-items-center">
             <h1 className="sitename">
-              Rent<span>Hive</span>
+              GharKi<span>Talash</span>
             </h1>
           </a>
           <nav id="navmenu" className="navmenu">

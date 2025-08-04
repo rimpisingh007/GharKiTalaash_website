@@ -31,7 +31,7 @@ export default function AdminHeader(){
               <a href="index.html" className="logo d-flex align-items-center">
                
                 <h1 className="sitename">
-                  Rent<span>Hive</span>
+                  GharKi<span>Talash</span>
                 </h1>
               </a>
               <nav id="navmenu" className="navmenu">
